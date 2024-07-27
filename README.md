@@ -8,9 +8,10 @@
 ## TODO
 1. Supported languages are `en`, `es`, `pt-br`, and `ar`. Default/fallback is `en`. Ideally this wouldn't be hard-coded. It should automatically support all languages enabled in Grav.
 2. There's currently a minor bug in the backend wherein the definition doesn't appear until you click inside the textbox. I believe this is related to the initial hidden state of the definition in the frontend.
-3. The JS file in the root directory must be copied to your theme's `assets` directory and manually plugged into the bottom of the `item` template. This is due to [the bug](https://github.com/N-Parsons/grav-plugin-glossary/issues/1). This should be handled more smoothly.
-4. I fixed [the bug](https://github.com/N-Parsons/grav-plugin-glossary/issues/1) by using a JavaScript file that injects the entire glossary into the HTML. This allows me to control the context in which the glossary plugin activates, so that it doesn't activate outside of `item` pages. I'm sure there's a better way to do this without increasing DOM size. I don't know how. Which is why I left [my issue](https://github.com/N-Parsons/grav-plugin-glossary/issues/1) open on the original repo.
-5. I don't use the glossary feature so I have no idea what state it's in currently. I only use the "optional `<abbrev>` tags".
+3. Markdown support seems to be broken in the finally rendered tooltip.
+4. The JS file in the root directory must be copied to your theme's `assets` directory and manually plugged into the bottom of the `item` template. This is due to [the bug](https://github.com/N-Parsons/grav-plugin-glossary/issues/1). This should be handled more smoothly.
+5. I fixed [the bug](https://github.com/N-Parsons/grav-plugin-glossary/issues/1) by using a JavaScript file that injects the entire glossary into the HTML. This allows me to control the context in which the glossary plugin activates, so that it doesn't activate outside of `item` pages. I'm sure there's a better way to do this without increasing DOM size. I don't know how. Which is why I left [my issue](https://github.com/N-Parsons/grav-plugin-glossary/issues/1) open on the original repo.
+6. I don't use the glossary feature so I have no idea what state it's in currently. I only use the "optional `<abbrev>` tags".
 
 ---
 
